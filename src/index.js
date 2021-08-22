@@ -4,6 +4,7 @@ import store from './Redux/Store/store'
 import {Provider} from 'react-redux'
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import HomePage from './Components/HomePage/homePage';
+import AddPassword from './Components/HomePage/addPassword';
 import Header from './Components/Header/header';
 const routing = (
     <Router>
@@ -11,7 +12,8 @@ const routing = (
             <Header />
             <Switch>
                 <Route path="/" component={HomePage} exact/>
-                <Route path="*" component={"NOT FOUND"}/>
+                <Route path="/addPass" component={AddPassword} exact />
+                <Route path="*" component={<div>HI</div>}/>
             </Switch>
         </div>
     </Router>

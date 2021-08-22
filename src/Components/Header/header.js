@@ -17,6 +17,7 @@ class Header extends React.Component {
             <div id="navbarCollapse" className="collapse navbar-collapse justify-content-start" style={{fontWeight: "lighter"}}>
                 <div className="navbar-nav ml-auto button-arrange">
                     <a href="/" className={curr === '/'? activeClassName:className}>Home</a>
+                    <a href="/addPass" className={curr === '/addPass'? activeClassName:className}>Add Password</a>
                 </div>
             </div>
         </nav>
